@@ -6,7 +6,6 @@
     xmlns:local="clr-namespace:KatalogMobilny"
     Title="KatalogMobilny">
 
-    <!-- TabBar = zakładki na dole ekranu, każda ShellContent to jedna strona -->
     <TabBar>
         <ShellContent
             Title="Katalog"
