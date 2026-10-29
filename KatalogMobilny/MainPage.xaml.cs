@@ -2,7 +2,8 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        // licznik był potrzebny tylko w zakomentowanym CounterBtn_Clicked
+        //int count = 0;
 
         public MainPage()
         {
@@ -14,13 +15,18 @@
             //etykieta.Parent = MainLayout;
         }
 
-        private void PokazClicked(object sender, EventArgs e)
+        private void PokazClicked(object? sender, EventArgs e)
         {
             EtykietaWyniku.Text = "Wybrano procesor";
         }
 
+        private void UkryjClicked(object? sender, EventArgs e)
+        {
+            EtykietaWyniku.Text = "Nic nie wybrano";
+        }
+
         /*
-        private void CounterBtn_Clicked(object sender, EventArgs e)
+        private void CounterBtn_Clicked(object? sender, EventArgs e)
         {
             count++;
             EtykietaPowitania.Text = $"Kliknięto {count} razy";

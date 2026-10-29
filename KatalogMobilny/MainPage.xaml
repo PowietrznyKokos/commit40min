@@ -35,7 +35,7 @@
                 x:Name="EtykietaWyniku" Text="Nic nie wybrano" />
         <!-- UWAGA: zamiast horizontalstacklayout możemy użyć grid -->
         <Button Grid.Row="4" Grid.Column="0" Text="Pokaż" Clicked="PokazClicked"/>
-        <Button Grid.Row="4" Grid.Column="1" Text="Ukryj"/>
+        <Button Grid.Row="4" Grid.Column="1" Text="Ukryj" Clicked="UkryjClicked"/>
     </Grid>
     <!--
     <VerticalStackLayout Padding="16" x:Name="MainLayout">

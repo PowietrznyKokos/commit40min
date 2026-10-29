@@ -6,9 +6,17 @@
     xmlns:local="clr-namespace:KatalogMobilny"
     Title="KatalogMobilny">
 
-    <ShellContent
-        Title="KatalogMobilny"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <!-- TabBar = zakładki na dole ekranu, każda ShellContent to jedna strona -->
+    <TabBar>
+        <ShellContent
+            Title="Katalog"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Nowy produkt"
+            ContentTemplate="{DataTemplate local:NewProductPage}"
+            Route="NewProductPage" />
+    </TabBar>
 
 </Shell>
