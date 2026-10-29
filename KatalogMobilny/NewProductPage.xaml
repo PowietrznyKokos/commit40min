@@ -10,19 +10,16 @@
 
                 <VerticalStackLayout Spacing="8">
                     <Label Text="Nazwa" />
-                    <Entry x:Name="NazwaEntry" Placeholder="Wpisz nazwę" HeightRequest="44"
-                           TextChanged="NazwaEntry_TextChanged" />
+                    <Entry x:Name="NazwaEntry" Placeholder="Wpisz nazwę" HeightRequest="44" />
                 </VerticalStackLayout>
 
                 <VerticalStackLayout Spacing="8">
                     <Label Text="Kategoria" />
-                    <Picker x:Name="KategoriaPicker" Title="Wybierz kategorię" HeightRequest="44"
-                            SelectedIndexChanged="KategoriaPicker_SelectedIndexChanged" />
+                    <Picker x:Name="KategoriaPicker" Title="Wybierz kategorię" HeightRequest="44" />
                 </VerticalStackLayout>
 
                 <HorizontalStackLayout Spacing="8" HeightRequest="44">
-                    <Switch x:Name="AvailableSwitch" VerticalOptions="Center"
-                            Toggled="AvailableSwitch_Toggled" />
+                    <Switch x:Name="AvailableSwitch" VerticalOptions="Center" />
                     <Label x:Name="DostepnoscLabel" Text="Produkt niedostępny" VerticalOptions="Center" />
                 </HorizontalStackLayout>
 

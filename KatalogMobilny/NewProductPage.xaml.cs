@@ -14,6 +14,10 @@ public partial class NewProductPage : ContentPage
 			"Dyski SSD",
 			"Pamięci RAM"
 		};
+
+		NazwaEntry.TextChanged += NazwaEntry_TextChanged;
+		AvailableSwitch.Toggled += AvailableSwitch_Toggled;
+		KategoriaPicker.SelectedIndexChanged += KategoriaPicker_SelectedIndexChanged;
 	}
 
 	private void NazwaEntry_TextChanged(object? sender, TextChangedEventArgs e)
